@@ -1,0 +1,51 @@
+.headerTop {
+    backdrop-filter: blur(20px);
+}
+.detailRibbon{
+    background: rgba(32, 32, 32, 0);
+    backdrop-filter: blur(5px);
+}
+.detailPageWrapperContainer {
+    border-collapse: collapse;
+    border-spacing: 0;
+    backdrop-filter: blur(40px);
+}
+.skinHeader-withBackground {
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+}
+.mainDrawer, .drawer-open {
+    background-color: rgba(0,0,0,0.3);
+    backdrop-filter: blur(20px);
+}
+.backdropContainer {
+    filter: blur(10px);
+}
+.cardOverlayFab-primary {
+    backdrop-filter: blur(5px);
+}
+@supports (backdrop-filter: blur(15px)) {
+    .dialog,
+    .mainDrawer,
+    .toast,
+    .appfooter {
+      backdrop-filter: blur(15px);
+      background-color: rgba(0, 0, 0, 0.35);
+    }
+    .paper-icon-button-light:hover,
+    #itemDetailPage .itemProgressBar,
+    #dashboardPage .backgroundProgress > div {
+      backdrop-filter: blur(4px);
+    }
+    @media all and (max-width: 70em){
+      .cardOverlayButtonIcon {
+        background-color: rgba(0, 0, 0, 0.35) !important;
+      }
+      .cardOverlayButtonIcon {
+      backdrop-filter: blur(4px);
+      }
+    }
+    .indicator {
+      backdrop-filter: blur(2px);
+    }
+}
