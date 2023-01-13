@@ -24,6 +24,10 @@
 .cardOverlayFab-primary {
     backdrop-filter: blur(5px);
 }
+.upNextContainer {
+  background-color: rgba(0,0,0,.2);
+  backdrop-filter: blur(20px);
+}
 @supports (backdrop-filter: blur(15px)) {
     .dialog,
     .mainDrawer,
